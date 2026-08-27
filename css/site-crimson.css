@@ -1,0 +1,5 @@
+/* site-crimson.css — loaded after site.css; switches body font to Crimson Pro */
+
+body {
+    font-family: 'Crimson Pro', Georgia, serif;
+}

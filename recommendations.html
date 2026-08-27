@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations — Etienne Jacquot</title>
+    <link rel="stylesheet" href="css/tufte.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<article>
+
+    <section>
+        <a class="back-link" href="index.html">← Etienne Jacquot</a>
+        <h1>Recommendations</h1>
+        <p class="tagline">Papers, books, and tools I return to.</p>
+    </section>
+
+    <!-- ── Papers ─────────────────────────────────────── -->
+    <section>
+        <h2>Papers</h2>
+        <ul class="rec-list">
+            <li>
+                <a href="#">Raissi, Perdikaris &amp; Karniadakis (2019) — Physics-informed neural networks.</a>
+                <span class="rec-why"> The paper that started the PINN literature; still the clearest statement of the variational idea.</span>
+            </li>
+            <li>
+                <a href="#">Saad &amp; Schultz (1986) — GMRES: A generalized minimal residual algorithm.</a>
+                <span class="rec-why"> Essential reading before tuning any Krylov solver for CFD.</span>
+            </li>
+            <li>
+                <a href="#">Linka et al. (2023) — Automated model discovery for soft matter.</a>
+                <span class="rec-why"> Compact introduction to constitutive neural networks; the CANN idea scales directly to solid mechanics.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ── Books ──────────────────────────────────────── -->
+    <section>
+        <h2>Books</h2>
+        <ul class="rec-list">
+            <li>
+                <a href="#">Trefethen &amp; Bau — Numerical Linear Algebra.</a>
+                <span class="rec-why"> The fastest route from linear algebra basics to preconditioning intuition; I re-read chapters 32–35 before every sparse-solver project.</span>
+            </li>
+            <li>
+                <a href="#">Pope — Turbulent Flows.</a>
+                <span class="rec-why"> Self-contained and precise; Chapters 9–10 on LES are indispensable if you work with filtered Navier–Stokes.</span>
+            </li>
+            <li>
+                <a href="#">Goodfellow, Bengio &amp; Courville — Deep Learning.</a>
+                <span class="rec-why"> Chapter 6 (backprop) and Chapter 8 (optimisation) are the ones to re-read when a training run diverges.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ── Tools ──────────────────────────────────────── -->
+    <section>
+        <h2>Tools</h2>
+        <ul class="rec-list">
+            <li>
+                <a href="#">JAX</a>
+                <span class="rec-why"> — Just-in-time compilation + automatic differentiation in NumPy syntax. The right default for research code that needs to go fast without a rewrite.</span>
+            </li>
+            <li>
+                <a href="#">Trilinos / ML AMG</a>
+                <span class="rec-why"> — Algebraic multigrid that actually works on saddle-point systems. Configuration is painful; the payoff in convergence rate is real.</span>
+            </li>
+            <li>
+                <a href="#">nekRS</a>
+                <span class="rec-why"> — GPU-native spectral-element CFD solver built on OCCA. Near-ideal for GPU-cluster turbulence studies once the mesh pipeline is set up.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────────── -->
+    <footer class="site-footer">
+        <p>
+            <a href="mailto:ejacquot@stanford.edu">ejacquot@stanford.edu</a>
+            <a href="#">GitHub</a>
+            <a href="https://linkedin.com/in/etienne-jacquot">LinkedIn</a>
+            <a href="resume.pdf">Resume</a>
+            <a href="writing/">Writing</a>
+        </p>
+    </footer>
+
+</article>
+</body>
+</html>
